@@ -23,7 +23,7 @@ function rating(winner, opponent) {
     throw "Error:The rating can't be less than 0"
   }
   if (winner === 0) {
-    return +parseFloat(opponent).toFixed(1)
+    return parseFloat((opponent).toFixed(1))
   }
   if (ratingDifference > 0 && ratingDifference <= 2) {
     return parseFloat((winner + 2).toFixed(1))
